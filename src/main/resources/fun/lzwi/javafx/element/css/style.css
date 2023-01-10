@@ -74,22 +74,34 @@
     -el-color-background-base: white;
     -el-color-background-overlay: white;
 
+    /* 字体 */
+    -el-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    /* 字体大小 */
+    -el-font-size-extra-small: 12;
+    -el-font-size-small: 13;
+    -el-font-size-base: 14;
+    -el-font-size-medium: 16;
+    -el-font-size-large: 18;
+    -el-font-size-extra-large: 20;
+    /* TODO: 行高 */
+    /* 间距 */
+    -el-space-small: 8;
+    /* small 才是真正的默认间距 */
+    -el-space-default: 12;
+    -el-space-large: 16;
+
+
+
+
+}
+
+.label {
+    -fx-font-family: -el-font-family;
+    -fx-font-size: -el-font-size-base;
 }
 
 
 .button {
-    background-color: white;
-    color: #606266;
-    border-width: 1px;
-    border-color: #dcdfe6;
-    border-style: solid;
-    border-radius: 4px;
-    padding: 8px 15px;
-    cursor: pointer;
-    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
-    margin-left: 12px;
-    font-size: 14px;
-
     -fx-background-color: white;
     -fx-text-fill: #606266;
     -fx-border-width: 1;
@@ -100,10 +112,11 @@
     /* -fx-background-radius必须，否则会露出尖锐的背景 */
     -fx-padding: 8 15;
     -fx-cursor: hand;
-    /* javafx css */
     -fx-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
-    /* -fx-margin-left: 12; 不存在, 需代码实现 */
     -fx-font-size: 14;
+
+    /* 未实现 */
+    margin-left: 12px;
 }
 
 .button:hover {
@@ -138,3 +151,33 @@
     -fx-text-fill: #a8abb2;
 
 }
+
+/* FIXME: 全局破坏性更改 */
+HBox,
+VBox {
+    -fx-spacing: -el-space-small;
+}
+
+.scroll-bar {
+    -fx-background-color: -el-color-transparent;
+}
+
+.scroll-bar>.thumb {
+    -fx-background-color: -el-color-border-dark;
+}
+
+.scroll-bar>.thumb:hover {
+    -fx-background-color: -el-color-border-darker;
+}
+
+.scroll-bar>.increment-button,
+.scroll-bar>.decrement-button
+ {
+    visibility: hidden;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+/* TODO: 修复increment-button、decrement-button偶尔无法隐藏的问题 */
