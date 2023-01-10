@@ -1,0 +1,140 @@
+/* .root 下可声明css变量？注意不可以有-- */
+.root {
+
+    /* 主色 */
+    -el-color-primary: #409eff;
+    -el-color-primary-dark: #337ecc;
+    -el-color-primary-light: #79bbff;
+    -el-color-primary-light-2: #a0cfff;
+    -el-color-primary-light-3: #c6e2ff;
+    -el-color-primary-light-4: #d9ecff;
+    -el-color-primary-light-5: #ecf5ff;
+
+    /* 辅助色 */
+    /* 成功 */
+    -el-color-success: #67c23a;
+    -el-color-success-dark: #529b2e;
+    -el-color-success-light: #95d475;
+    -el-color-success-light-2: #b3e19d;
+    -el-color-success-light-3: #d1edc4;
+    -el-color-success-light-4: #e1f3d8;
+    -el-color-success-light-5: #f0f9eb;
+    /* 警告 */
+    -el-color-warning: #e6a23c;
+    -el-color-warning-dark: #b88230;
+    -el-color-warning-light: #eebe77;
+    -el-color-warning-light-2: #f3d19e;
+    -el-color-warning-light-3: #f8e3c5;
+    -el-color-warning-light-4: #faecd8;
+    -el-color-warning-light-5: #fdf6ec;
+    /* 危险 */
+    -el-color-danger: #f56c6c;
+    -el-color-danger-dark: #c45656;
+    -el-color-danger-light: #f89898;
+    -el-color-danger-light-2: #fab6b6;
+    -el-color-danger-light-3: #fcd3d3;
+    -el-color-danger-light-4: #fde2e2;
+    -el-color-danger-light-5: #fef0f0;
+    /* 信息 */
+    -el-color-info: #909399;
+    -el-color-info-dark: #73767a;
+    -el-color-info-light: #b1b3b8;
+    -el-color-info-light-2: #c8c9cc;
+    -el-color-info-light-3: #dedfe0;
+    -el-color-info-light-4: #e9e9eb;
+    -el-color-info-light-5: #f4f4f5;
+
+    /* 中性色 */
+    /* 文本 */
+    -el-color-text-primary: #b1b3b8;
+    -el-color-text-regular: #c8c9cc;
+    -el-color-text-secondary: #dedfe0;
+    -el-color-text-placeholder: #e9e9eb;
+    -el-color-text-disabled: #f4f4f5;
+    /* 边框 */
+    -el-color-border-darker: #cdd0d6;
+    -el-color-border-dark: #d4d7de;
+    -el-color-border-base: #dcdfe6;
+    -el-color-border-light: #e4e7ed;
+    -el-color-border-lighter: #ebeef5;
+    -el-color-border-extra-light: #f2f6fc;
+    /* 填充 */
+    -el-color-fill-darker: #e6e8eb;
+    -el-color-fill-dark: #ebedf0;
+    -el-color-fill-base: #f0f2f5;
+    -el-color-fill-light: #f5f7fa;
+    -el-color-fill-lighter: #fafafa;
+    -el-color-fill-extra-light: #fafcff;
+    -el-color-fill-blank: #ffffff;
+    /* 其他 */
+    -el-color-basic-black: black;
+    -el-color-basic-white: white;
+    -el-color-transparent: transparent;
+    -el-color-background-page: #f2f3f5;
+    -el-color-background-base: white;
+    -el-color-background-overlay: white;
+
+}
+
+
+.button {
+    background-color: white;
+    color: #606266;
+    border-width: 1px;
+    border-color: #dcdfe6;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    margin-left: 12px;
+    font-size: 14px;
+
+    -fx-background-color: white;
+    -fx-text-fill: #606266;
+    -fx-border-width: 1;
+    -fx-border-color: #dcdfe6;
+    -fx-border-style: solid;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    /* -fx-background-radius必须，否则会露出尖锐的背景 */
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+    /* javafx css */
+    -fx-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    /* -fx-margin-left: 12; 不存在, 需代码实现 */
+    -fx-font-size: 14;
+}
+
+.button:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+
+    -fx-color: #409eff;
+    -fx-border-color: #c6e2ff;
+    -fx-background-color: #ecf5ff;
+}
+
+.button:pressed {
+    color: #409eff;
+    border-color: #409eff;
+    background-color: #ecf5ff;
+    outline: none;
+
+    -fx-text-fill: #409eff;
+    -fx-border-color: #409eff;
+    -fx-background-color: #ecf5ff;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: white;
+    color: #a8abb2;
+
+    -fx-cursor: default;
+    /* -fx-cursor中无等效替代 */
+    -fx-background-color: white;
+    -fx-text-fill: #a8abb2;
+
+}
