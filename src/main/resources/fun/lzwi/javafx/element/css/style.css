@@ -47,7 +47,7 @@
     /* 中性色 */
     /* 文本 */
     -el-color-text-primary: #b1b3b8;
-    -el-color-text-regular: #c8c9cc;
+    -el-color-text-regular: #606060;
     -el-color-text-secondary: #dedfe0;
     -el-color-text-placeholder: #e9e9eb;
     -el-color-text-disabled: #f4f4f5;
@@ -77,18 +77,20 @@
     /* 字体 */
     -el-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
     /* 字体大小 */
-    -el-font-size-extra-small: 12;
-    -el-font-size-small: 13;
-    -el-font-size-base: 14;
-    -el-font-size-medium: 16;
-    -el-font-size-large: 18;
-    -el-font-size-extra-large: 20;
+    -el-font-size-extra-small: 1em;
+    -el-font-size-small: 1.0833em;
+    -el-font-size-base: 1.1666em;
+    -el-font-size-medium: 1.3333em;
+    -el-font-size-large: 1.5em;
+    -el-font-size-extra-large: 1.6666em;
     /* TODO: 行高 */
     /* 间距 */
     -el-space-small: 8;
     /* small 才是真正的默认间距 */
     -el-space-default: 12;
     -el-space-large: 16;
+
+    -el-border-radius-small: 2;
 
 
 
@@ -97,7 +99,7 @@
 
 .label {
     -fx-font-family: -el-font-family;
-    -fx-font-size: -el-font-size-base;
+    -fx-font-size: 1.1666em;
 }
 
 
@@ -171,8 +173,7 @@ VBox {
 }
 
 .scroll-bar>.increment-button,
-.scroll-bar>.decrement-button
- {
+.scroll-bar>.decrement-button {
     visibility: hidden;
     -fx-max-width: 0;
     -fx-max-height: 0;
@@ -181,3 +182,37 @@ VBox {
 }
 
 /* TODO: 修复increment-button、decrement-button偶尔无法隐藏的问题 */
+
+
+.check-box {
+    -fx-font-size: 1.1666em;
+    -fx-text-fill: -el-color-text-regular;
+    -fx-cursor: hand;
+}
+
+.check-box>.box {
+    -fx-border-radius: 2;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-color: -el-color-border-dark;
+    -fx-background-color: -el-color-transparent;
+    -fx-background-radius: 2;
+}
+
+.check-box>.box:hover,
+.check-box:focused>.box {
+    -fx-border-color: -el-color-primary;
+}
+
+.check-box:selected{
+    -fx-text-fill: -el-color-primary;
+}
+.check-box:selected>.box {
+    -fx-border-width: 0;
+    -fx-background-color: -el-color-primary;
+}
+/* TODO: 修改选中标志 */
+.check-box>.box>.mark {
+    /* -fx-fill: -el-color-basic-white; */
+    /* -fx-shape: "M43 11L16.875 37L5 25.1818" */
+}
