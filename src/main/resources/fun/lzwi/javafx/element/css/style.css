@@ -201,6 +201,7 @@ VBox {
     -fx-background-radius: 2;
 }
 
+/* FIXME: 选中box大小变化 */
 .check-box>.box:hover,
 .check-box:focused>.box {
     -fx-border-color: -el-color-primary;
@@ -243,4 +244,27 @@ VBox {
 
 .text-input:disabled {
     -fx-background-color: -el-color-fill-dark;
+}
+
+.hyperlink {
+    -fx-padding: 0 0 2px 0;
+    -fx-text-fill: -el-color-text-regular;
+    -fx-underline: false;
+}
+
+.hyperlink:hover {
+    /* 改变border-color而不是border-width这样文字的位置不会偏移 */
+    -fx-border-color: -el-color-transparent -el-color-transparent -el-color-primary -el-color-transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-text-fill: -el-color-primary;
+}
+
+.hyperlink:focused{
+    -fx-border-color: -el-color-transparent;
+    -fx-text-fill: -el-color-primary-dark;
+}
+
+.hyperlink:hover:visited {
+    -fx-text-fill: -el-color-primary-light;
 }
