@@ -176,15 +176,17 @@ VBox {
 
 .scroll-bar>.increment-button,
 .scroll-bar>.decrement-button {
+    -fx-padding: 0;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
     visibility: hidden;
     -fx-max-width: 0;
     -fx-max-height: 0;
     -fx-pref-width: 0;
     -fx-pref-height: 0;
 }
-
-/* TODO: 修复increment-button、decrement-button偶尔无法隐藏的问题 */
-
 
 .check-box {
     -fx-font-size: 1.1666em;
