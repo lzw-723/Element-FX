@@ -201,7 +201,6 @@ VBox {
     -fx-background-radius: 2;
 }
 
-/* FIXME: 选中box大小变化 */
 .check-box>.box:hover,
 .check-box:focused>.box {
     -fx-border-color: -el-color-primary;
@@ -212,7 +211,8 @@ VBox {
 }
 
 .check-box:selected>.box {
-    -fx-border-width: 0;
+    /* 选中box大小不变化 */
+    -fx-border-color: -el-color-transparent;
     -fx-background-color: -el-color-primary;
 }
 
