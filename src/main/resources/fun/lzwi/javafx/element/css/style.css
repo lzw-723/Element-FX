@@ -218,9 +218,9 @@ VBox {
     -fx-background-color: -el-color-primary;
 }
 
-/* TODO: 修改选中标志 */
-.check-box>.box>.mark {
-    /* -fx-fill: -el-color-basic-white; */
+/* TODO: 修改选中标志形状？ */
+.check-box:selected>.box>.mark {
+    -fx-background-color: -el-color-fill-dark;
     /* -fx-shape: "M43 11L16.875 37L5 25.1818" */
 }
 
@@ -235,12 +235,10 @@ VBox {
 }
 
 .text-input:hover {
-    -fx-border-width: 1.5;
     -fx-border-color: -el-color-border-darker;
 }
 
 .text-input:focused {
-    -fx-border-width: 1.2;
     -fx-border-color: -el-color-primary;
 }
 
@@ -269,4 +267,64 @@ VBox {
 
 .hyperlink:hover:visited {
     -fx-text-fill: -el-color-primary-light;
+}
+
+/* TODO: 背景颜色值考虑为透明还是白色 */
+.scroll-pane,
+.scroll-pane>.viewport {
+    -fx-background-color: -el-color-transparent;
+}
+
+.scroll-pane>.corner {
+    -fx-background-color: -el-color-transparent;
+}
+
+.spinner:focused,
+.spinner:contains-focus {
+    -fx-background-color: -el-color-transparent;
+}
+
+.spinner .text-field {
+    -fx-border-radius: 2 0 0 2;
+}
+
+.spinner:focused .text-field {
+    -fx-border-width: 1px 0 1px 1px;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: -el-color-fill-dark;
+}
+
+.spinner:focused .increment-arrow-button{
+    -fx-border-color: -el-color-primary -el-color-primary -el-color-transparent -el-color-transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 1px 1px 0 0;
+    -fx-border-radius: 0 2 0 0;
+}
+
+/* FIXME: 像素不对齐 */
+.spinner:focused .decrement-arrow-button {
+    -fx-border-color: -el-color-primary;
+    -fx-border-style: solid;
+    -fx-border-width: 0 1px 1px 0;
+    -fx-border-radius: 0 0 2 0;
+}
+
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: -el-color-text-regular;
+    -fx-padding: 0.3333em 0.3333em 0.1666em 0.3333em;
+    /* -fx-shape: "M 0 4 h 7 l -3.5 -4 z"; */
+}
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: -el-color-text-regular;
+    -fx-padding: 0.1666em 0.3333em 0.33333em 0.3333em;
+    /* -fx-shape: "M 0 0 h 7 l -3.5 4 z"; */
+}
+
+.spinner .increment-arrow-button:hover .increment-arrow,
+.spinner .decrement-arrow-button:hover .decrement-arrow {
+    -fx-background-color: -el-color-primary;
 }
