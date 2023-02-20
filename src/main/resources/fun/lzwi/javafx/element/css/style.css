@@ -179,8 +179,8 @@ VBox {
     -fx-padding: 0;
 }
 
-.scroll-bar > .increment-button > .increment-arrow,
-.scroll-bar > .decrement-button > .decrement-arrow {
+.scroll-bar>.increment-button>.increment-arrow,
+.scroll-bar>.decrement-button>.decrement-arrow {
     visibility: hidden;
     -fx-max-width: 0;
     -fx-max-height: 0;
@@ -260,7 +260,7 @@ VBox {
     -fx-text-fill: -el-color-primary;
 }
 
-.hyperlink:focused{
+.hyperlink:focused {
     -fx-border-color: -el-color-transparent;
     -fx-text-fill: -el-color-primary-dark;
 }
@@ -292,12 +292,13 @@ VBox {
     -fx-border-width: 1px 0 1px 1px;
 }
 
+/* TODO: 按下状态的反馈效果 */
 .spinner .increment-arrow-button,
 .spinner .decrement-arrow-button {
     -fx-background-color: -el-color-fill-dark;
 }
 
-.spinner:focused .increment-arrow-button{
+.spinner:focused .increment-arrow-button {
     -fx-border-color: -el-color-primary -el-color-primary -el-color-transparent -el-color-transparent;
     -fx-border-style: solid;
     -fx-border-width: 1px 1px 0 0;
@@ -327,4 +328,29 @@ VBox {
 .spinner .increment-arrow-button:hover .increment-arrow,
 .spinner .decrement-arrow-button:hover .decrement-arrow {
     -fx-background-color: -el-color-primary;
+}
+
+.choice-box {
+    -fx-background-color: -el-color-transparent;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-border-color: -el-color-border-base;
+    -fx-text-fill: -el-color-text-regular;
+}
+
+.choice-box:hover {
+    -fx-border-color: -el-color-border-darker;
+}
+
+.choice-box:focused {
+    -fx-border-color: -el-color-primary;
+}
+
+.choice-box:disabled {
+    -fx-background-color: -el-color-fill-dark;
+}
+
+.choice-box>.open-button>.arrow {
+    -fx-background-color: -el-color-text-regular;
+    ;
 }
