@@ -201,6 +201,8 @@ VBox {
     -fx-border-color: -el-color-border-dark;
     -fx-background-color: -el-color-transparent;
     -fx-background-radius: 2;
+    /* 下面一行修复失去焦点后box形状变化的错误 */
+    -fx-background-insets: 0;
 }
 
 .check-box>.box:hover,
@@ -331,6 +333,7 @@ VBox {
 }
 
 .choice-box {
+    -fx-cursor: hand;
     -fx-background-color: -el-color-transparent;
     -fx-border-radius: 4;
     -fx-border-width: 1;
@@ -352,5 +355,4 @@ VBox {
 
 .choice-box>.open-button>.arrow {
     -fx-background-color: -el-color-text-regular;
-    ;
 }
