@@ -356,3 +356,28 @@ VBox {
 .choice-box>.open-button>.arrow {
     -fx-background-color: -el-color-text-regular;
 }
+
+
+.slider .thumb {
+    /* 20 */
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: -el-color-basic-white;
+    -fx-border-color: -el-color-primary-dark;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+/* FIXME: 偏移 */
+.slider:focused .thumb,
+.slider:hover .thumb {
+    /* 24 */
+    -fx-pref-width: 24px;
+    -fx-pref-height: 24px;
+    -fx-border-radius: 12px;
+}
+
+.slider .track {
+    -fx-background-color: -el-color-fill-darker;
+    -fx-background-radius: 3px;
+}
