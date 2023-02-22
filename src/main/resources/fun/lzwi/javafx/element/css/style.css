@@ -281,6 +281,11 @@ VBox {
     -fx-background-color: -el-color-transparent;
 }
 
+.spinner {
+    -fx-background-color: -el-color-transparent;
+}
+
+/* 整理代码 */
 .spinner:focused,
 .spinner:contains-focus {
     -fx-background-color: -el-color-transparent;
@@ -288,6 +293,7 @@ VBox {
 
 .spinner .text-field {
     -fx-border-radius: 2 0 0 2;
+    -fx-effect: null;
 }
 
 .spinner:focused .text-field {
@@ -366,10 +372,15 @@ VBox {
     -fx-padding: 0;
 }
 
+.slider .track {
+    -fx-cursor: hand;
+}
+
 .slider .thumb {
     /* 20 */
     -fx-pref-width: 20px;
     -fx-pref-height: 20px;
+    -fx-cursor: move;
     -fx-background-color: -el-color-basic-white;
     -fx-border-color: -el-color-primary-dark;
     -fx-border-width: 2px;
