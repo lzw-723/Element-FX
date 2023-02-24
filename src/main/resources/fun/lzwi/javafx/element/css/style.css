@@ -399,3 +399,35 @@ VBox {
     -fx-background-color: -el-color-text-secondary;
     -fx-background-radius: 3px;
 }
+
+
+.radio-button {
+    -fx-text-fill: -el-color-text-regular;
+    -fx-cursor: hand;
+}
+
+.radio-button>.radio {
+    -fx-background-color: -el-color-basic-white;
+    -fx-border-width: 1px;
+    -fx-border-color: -el-color-border-base;
+    -fx-border-radius: 10px;
+}
+
+.radio-button>.radio:hover,
+.radio-button:focused>.radio {
+    -fx-border-color: -el-color-primary;
+}
+
+.radio-button>.radio>.dot {
+    -fx-background-color: -el-color-transparent;
+    -fx-background-radius: 1.0em;
+}
+/* FIXME: 失去焦点后偏移 */
+.radio-button:selected>.radio {
+    -fx-background-color: -el-color-primary;
+    -fx-border-color: -el-color-transparent;
+}
+
+.radio-button:selected>.radio>.dot {
+    -fx-background-color: -el-color-basic-white;
+}
