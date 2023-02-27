@@ -422,6 +422,7 @@ VBox {
     -fx-background-color: -el-color-transparent;
     -fx-background-radius: 1.0em;
 }
+
 /* FIXME: 失去焦点后偏移 */
 .radio-button:selected>.radio {
     -fx-background-color: -el-color-primary;
@@ -432,21 +433,37 @@ VBox {
     -fx-background-color: -el-color-basic-white;
 }
 
-.progress-bar{
+.progress-bar {
     -fx-background-color: -el-color-fill-darker;
     -fx-pref-height: 8px;
     -fx-background-radius: 4px;
 }
 
-.progress-bar >.track {
+.progress-bar>.track {
     -fx-background-color: -el-color-fill-darker;
 }
-.progress-bar > .bar {
+
+.progress-bar>.bar {
     -fx-background-insets: 0;
     -fx-background-color: -el-color-primary;
     -fx-background-radius: 4px;
 }
 
-.progress-bar:indeterminate > .bar {
+.progress-bar:indeterminate>.bar {
     -fx-background-color: linear-gradient(to left, transparent, -el-color-primary, -el-color-primary-dark);
+}
+
+.progress-indicator:disabled {
+    -fx-spin-enabled: false;
+}
+
+.progress-indicator>.determinate-indicator>.percentage {
+    -fx-fill: -el-color-text-regular;
+}
+
+.progress-indicator>.determinate-indicator>.indicator {
+    -fx-background-color: -el-color-fill-base;
+    -fx-border-color: -el-color-border-darker;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
 }
