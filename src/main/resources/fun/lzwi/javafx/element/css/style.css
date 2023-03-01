@@ -457,6 +457,10 @@ VBox {
     -fx-spin-enabled: false;
 }
 
+.progress-indicator > .determinate-indicator > .progress {
+    -fx-background-color: -el-color-primary;
+}
+
 .progress-indicator>.determinate-indicator>.percentage {
     -fx-fill: -el-color-text-regular;
 }
