@@ -457,7 +457,7 @@ VBox {
     -fx-spin-enabled: false;
 }
 
-.progress-indicator > .determinate-indicator > .progress {
+.progress-indicator>.determinate-indicator>.progress {
     -fx-background-color: -el-color-primary;
 }
 
@@ -470,4 +470,39 @@ VBox {
     -fx-border-color: -el-color-border-darker;
     -fx-background-insets: 0;
     -fx-padding: 0;
+}
+
+
+.toggle-button {
+    -fx-background-color: -el-color-primary-white;
+    -fx-text-fill: -el-color-text-regular;
+    -fx-border-color: -el-color-border-base;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+
+}
+
+.toggle-button:hover {
+    -fx-color: -el-color-primary;
+    -fx-border-color: -el-color-primary-light-3;
+    -fx-background-color: -el-color-primary-light-5;
+}
+
+.toggle-button:focused,
+.toggle-button:pressed {
+    -fx-text-fill: -el-color-basic-white;
+    -fx-border-color: -el-color-transparent;
+    -fx-background-color: -el-color-primary-light-2;
+    -fx-background-insets: 0;
+}
+
+.toggle-button:selected {
+    -fx-text-fill: -el-color-basic-white;
+    -fx-border-color: -el-color-primary;
+    -fx-background-color: -el-color-primary;
+    -fx-background-insets: 0;
 }
