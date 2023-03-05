@@ -1,4 +1,4 @@
-package fun.lzwi.javafx;
+package fun.lzwi.javafx.demo;
 
 public class SystemInfo {
 

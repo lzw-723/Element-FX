@@ -1,14 +1,12 @@
-package fun.lzwi.javafx;
+package fun.lzwi.javafx.demo;
 
 import fun.lzwi.javafx.element.ELResources;
-import fun.lzwi.javafx.element.base.ELButton;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
 
 /**
  * JavaFX App
@@ -27,9 +25,4 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
-    public static void main(String[] args) {
-        launch();
-    }
-
 }
