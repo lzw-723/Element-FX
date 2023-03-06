@@ -113,13 +113,10 @@
     -fx-border-radius: 4;
     -fx-background-radius: 4;
     /* -fx-background-radius必须，否则会露出尖锐的背景 */
-    -fx-padding: 8 15;
+    -fx-padding: 6 12;
     -fx-cursor: hand;
     -fx-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
-    -fx-font-size: 14;
-
-    /* 未实现 */
-    margin-left: 12px;
+    -fx-font-size: 1.1666em;
 }
 
 .button:hover {
