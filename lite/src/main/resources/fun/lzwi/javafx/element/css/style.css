@@ -196,7 +196,7 @@ VBox {
     -fx-border-style: solid;
     -fx-border-width: 1;
     -fx-border-color: -el-color-border-dark;
-    -fx-background-color: -el-color-transparent;
+    -fx-background-color: -el-color-background-base;
     -fx-background-radius: 2;
     /* 下面一行修复失去焦点后box形状变化的错误 */
     -fx-background-insets: 0;
@@ -223,9 +223,9 @@ VBox {
     /* -fx-shape: "M43 11L16.875 37L5 25.1818" */
 }
 
-/* TODO: 背景颜色待确定 */
+
 .text-input {
-    -fx-background-color: -el-color-transparent;
+    -fx-background-color: -el-color-background-base;
     -fx-border-radius: 2;
     -fx-border-width: 1;
     -fx-border-color: -el-color-border-base;
@@ -337,7 +337,7 @@ VBox {
 
 .choice-box {
     -fx-cursor: hand;
-    -fx-background-color: -el-color-transparent;
+    -fx-background-color: -el-color-background-base;
     -fx-border-radius: 4;
     -fx-border-width: 1;
     -fx-border-color: -el-color-border-base;
@@ -404,7 +404,7 @@ VBox {
 }
 
 .radio-button>.radio {
-    -fx-background-color: -el-color-basic-white;
+    -fx-background-color: -el-color-background-base;
     -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-border-radius: 10px;
@@ -471,8 +471,8 @@ VBox {
 
 
 .toggle-button {
-    -fx-background-color: -el-color-primary-white;
-    -fx-text-fill: -el-color-text-regular;
+    -fx-background-color: -el-color-background-base;
+    -fx-text-fill: -el-color-primary;
     -fx-border-color: -el-color-border-base;
     -fx-border-width: 1;
     -fx-border-style: solid;
@@ -502,4 +502,30 @@ VBox {
     -fx-border-color: -el-color-primary;
     -fx-background-color: -el-color-primary;
     -fx-background-insets: 0;
+}
+
+
+.combo-box {
+    -fx-cursor: hand;
+    -fx-background-color: -el-color-background-base;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-border-color: -el-color-border-base;
+    -fx-text-fill: -el-color-text-regular;
+}
+
+.combo-box:hover {
+    -fx-border-color: -el-color-border-darker;
+}
+
+.combo-box:focused {
+    -fx-border-color: -el-color-primary;
+}
+
+.combo-box:disabled {
+    -fx-background-color: -el-color-fill-dark;
+}
+
+.combo-box>.arrow-button>.arrow {
+    -fx-background-color: -el-color-text-regular;
 }
