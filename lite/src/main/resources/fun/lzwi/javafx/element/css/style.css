@@ -268,6 +268,9 @@ VBox {
 }
 
 .hyperlink:hover:visited {
+    -fx-border-color: -el-color-transparent -el-color-transparent -el-color-primary -el-color-transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
     -fx-text-fill: -el-color-primary-light;
 }
 
