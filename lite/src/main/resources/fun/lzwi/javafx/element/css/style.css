@@ -110,10 +110,10 @@
 
 
 .button {
-    -fx-background-color: white;
-    -fx-text-fill: #606266;
+    -fx-background-color: -el-color-basic-white;
+    -fx-text-fill: -el-color-text-regular;
     -fx-border-width: 1;
-    -fx-border-color: #dcdfe6;
+    -fx-border-color: -el-color-border-base;
     -fx-border-style: solid;
     -fx-border-radius: 4;
     -fx-background-radius: 4;
@@ -125,37 +125,21 @@
 }
 
 .button:hover {
-    color: #409eff;
-    border-color: #c6e2ff;
-    background-color: #ecf5ff;
-
-    -fx-color: #409eff;
-    -fx-border-color: #c6e2ff;
-    -fx-background-color: #ecf5ff;
+    -fx-color: -el-color-primary;
+    -fx-border-color: -el-color-primary-light-3;
+    -fx-background-color: -el-color-primary-light-5;
 }
 
 .button:focused,
 .button:pressed {
-    color: #409eff;
-    border-color: #409eff;
-    background-color: #ecf5ff;
-    outline: none;
-
-    -fx-text-fill: #409eff;
-    -fx-border-color: #409eff;
-    -fx-background-color: #ecf5ff;
+    -fx-text-fill: -el-color-primary;
+    -fx-border-color: -el-color-primary;
+    -fx-background-color: -el-color-primary-light-5;
 }
 
 .button:disabled {
-    cursor: not-allowed;
-    background-color: white;
-    color: #a8abb2;
-
-    -fx-cursor: default;
-    /* -fx-cursor中无等效替代 */
-    -fx-background-color: white;
+    -fx-background-color: -el-color-basic-white;
     -fx-text-fill: #a8abb2;
-
 }
 
 /* FIXME: 全局破坏性更改 */
