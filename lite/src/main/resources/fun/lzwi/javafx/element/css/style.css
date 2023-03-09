@@ -224,23 +224,20 @@ VBox {
 }
 
 .check-box:selected>.box>.mark {
+    /* -fx-padding: 10px; */
     -fx-background-color: -el-color-fill-dark;
     -fx-shape: -el-icon-check;
 }
 
-.check-box:indeterminate>.box {
-    /* -fx-padding: 0.166667em 0.166667em 0.25em 0.25em; */
-}
+.check-box:indeterminate>.box {}
 
-/* FIXME: indeterminate状态下大小异常 */
+/* FIXME: indeterminate状态下位置偏移 */
 .check-box:indeterminate>.box>.mark {
-    -fx-background-insets: 0;
-    /* -fx-shape: -el-icon-minus;
-    -fx-background-color: -el-color-primary; */
-    /* -fx-position-shape: true; */
-    /* -fx-padding: 0.666667em;
-    -fx-background-insets: 0; */
-    /* -fx-scale-shape: true; */
+    /* 限制图标大小 */
+    -fx-background-insets: 1 9 1 9;
+    -fx-border-color: -el-color-transparent;
+    -fx-shape: -el-icon-minus;
+    -fx-background-color: -el-color-primary;
 }
 
 
@@ -311,22 +308,22 @@ VBox {
     -fx-background-color: -el-color-transparent;
 }
 
-.spinner .text-field {
+.spinner>.text-field {
     -fx-border-radius: 2 0 0 2;
     -fx-effect: null;
 }
 
-.spinner:focused .text-field {
+.spinner:focused>.text-field {
     -fx-border-width: 1px 0 1px 1px;
 }
 
 /* TODO: 按下状态的反馈效果 */
-.spinner .increment-arrow-button,
-.spinner .decrement-arrow-button {
+.spinner>.increment-arrow-button,
+.spinner>.decrement-arrow-button {
     -fx-background-color: -el-color-fill-dark;
 }
 
-.spinner:focused .increment-arrow-button {
+.spinner:focused>.increment-arrow-button {
     -fx-border-color: -el-color-primary -el-color-primary -el-color-transparent -el-color-transparent;
     -fx-border-style: solid;
     -fx-border-width: 1px 1px 0 0;
@@ -334,25 +331,25 @@ VBox {
 }
 
 /* FIXME: 像素不对齐 */
-.spinner:focused .decrement-arrow-button {
+.spinner:focused>.decrement-arrow-button {
     -fx-border-color: -el-color-primary;
     -fx-border-style: solid;
     -fx-border-width: 0 1px 1px 0;
     -fx-border-radius: 0 0 2 0;
 }
 
-.spinner .increment-arrow-button .increment-arrow {
+.spinner>.increment-arrow-button>.increment-arrow {
     -fx-background-color: -el-color-text-regular;
     -fx-shape: -el-icon-up;
 }
 
-.spinner .decrement-arrow-button .decrement-arrow {
+.spinner>.decrement-arrow-button>.decrement-arrow {
     -fx-background-color: -el-color-text-regular;
     -fx-shape: -el-icon-down;
 }
 
-.spinner .increment-arrow-button:hover .increment-arrow,
-.spinner .decrement-arrow-button:hover .decrement-arrow {
+.spinner>.increment-arrow-button:hover>.increment-arrow,
+.spinner>.decrement-arrow-button:hover>.decrement-arrow {
     -fx-background-color: -el-color-primary;
 }
 
@@ -391,11 +388,11 @@ VBox {
     -fx-padding: 0;
 }
 
-.slider .track {
+.slider>.track {
     -fx-cursor: hand;
 }
 
-.slider .thumb {
+.slider>.thumb {
     /* 20 */
     -fx-pref-width: 20px;
     -fx-pref-height: 20px;
@@ -406,15 +403,15 @@ VBox {
     -fx-border-radius: 10px;
 }
 
-.slider:focused .thumb,
-.slider:hover .thumb {
+.slider:focused>.thumb,
+.slider:hover>.thumb {
     /* 24 */
     -fx-pref-width: 24px;
     -fx-pref-height: 24px;
     -fx-border-radius: 12px;
 }
 
-.slider .track {
+.slider>.track {
     -fx-background-color: -el-color-text-secondary;
     -fx-background-radius: 3px;
 }
@@ -472,8 +469,14 @@ VBox {
     -fx-background-color: linear-gradient(to left, transparent, -el-color-primary, -el-color-primary-dark);
 }
 
+
 .progress-indicator:disabled {
     -fx-spin-enabled: false;
+}
+
+.progress-indicator>.determinate-indicator>.tick {
+    -fx-shape: -el-icon-check;
+    -fx-background-insets: 0;
 }
 
 .progress-indicator>.determinate-indicator>.progress {
