@@ -85,12 +85,12 @@
     -el-font-size-extra-large: 1.6666em;
     /* TODO: 行高 */
     /* 间距 */
-    -el-space-small: 8;
+    -el-space-small: 8px;
     /* small 才是真正的默认间距 */
-    -el-space-default: 12;
-    -el-space-large: 16;
+    -el-space-default: 12px;
+    -el-space-large: 16px;
 
-    -el-border-radius-small: 2;
+    -el-border-radius-small: 2px;
 
     /* svg path 图标 */
     /* 来自https://iconpark.oceanengine.com/official */
@@ -112,13 +112,13 @@
 .button {
     -fx-background-color: -el-color-basic-white;
     -fx-text-fill: -el-color-text-regular;
-    -fx-border-width: 1;
+    -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-border-style: solid;
-    -fx-border-radius: 4;
-    -fx-background-radius: 4;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
     /* -fx-background-radius必须，否则会露出尖锐的背景 */
-    -fx-padding: 6 12;
+    -fx-padding: 6px 12px;
     -fx-cursor: hand;
     -fx-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
     -fx-font-size: 1.1666em;
@@ -181,13 +181,14 @@ VBox {
 }
 
 .check-box>.box {
-    -fx-border-radius: 2;
-    -fx-border-style: solid;
-    -fx-border-width: 1;
+
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
     -fx-border-color: -el-color-border-dark;
+
     -fx-background-color: -el-color-background-base;
-    -fx-background-radius: 2;
-    /* -fx-padding: 0.166667em 0.166667em 0.25em 0.25em; */
+    -fx-background-radius: 2px;
+    -fx-padding: 0.25em;
     /* 下面一行修复失去焦点后box形状变化的错误 */
     -fx-background-insets: 0;
 }
@@ -203,32 +204,36 @@ VBox {
 
 .check-box:selected>.box {
     /* 选中box大小不变化 */
+    -fx-background-insets: 0;
     -fx-border-color: -el-color-transparent;
     -fx-background-color: -el-color-primary;
 }
 
 .check-box:selected>.box>.mark {
-    /* -fx-padding: 10px; */
+    -fx-padding: 0.5em;
     -fx-background-color: -el-color-fill-dark;
     -fx-shape: -el-icon-check;
 }
 
-.check-box:indeterminate>.box {}
+.check-box:indeterminate>.box {
+    -fx-background-insets: 0;
+}
 
-/* FIXME: indeterminate状态下位置偏移 */
+/* FIXME: 位置偏移? */
 .check-box:indeterminate>.box>.mark {
     /* 限制图标大小 */
-    -fx-background-insets: 1 9 1 9;
+    -fx-background-insets: 1px 10px 1px 10px;
     -fx-border-color: -el-color-transparent;
     -fx-shape: -el-icon-minus;
     -fx-background-color: -el-color-primary;
+    -fx-padding: 0.5em;
 }
 
 
 .text-input {
     -fx-background-color: -el-color-background-base;
-    -fx-border-radius: 2;
-    -fx-border-width: 1;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-text-fill: -el-color-text-regular;
     -fx-prompt-text-fill: -el-color-text-primary;
@@ -293,7 +298,7 @@ VBox {
 }
 
 .spinner>.text-field {
-    -fx-border-radius: 2 0 0 2;
+    -fx-border-radius: 2px 0 0 2px;
     -fx-effect: null;
 }
 
@@ -311,7 +316,7 @@ VBox {
     -fx-border-color: -el-color-primary -el-color-primary -el-color-transparent -el-color-transparent;
     -fx-border-style: solid;
     -fx-border-width: 1px 1px 0 0;
-    -fx-border-radius: 0 2 0 0;
+    -fx-border-radius: 0 2px 0 0;
 }
 
 /* FIXME: 像素不对齐 */
@@ -319,7 +324,7 @@ VBox {
     -fx-border-color: -el-color-primary;
     -fx-border-style: solid;
     -fx-border-width: 0 1px 1px 0;
-    -fx-border-radius: 0 0 2 0;
+    -fx-border-radius: 0 0 2px 0;
 }
 
 .spinner>.increment-arrow-button>.increment-arrow {
@@ -340,8 +345,8 @@ VBox {
 .choice-box {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
-    -fx-border-radius: 4;
-    -fx-border-width: 1;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-text-fill: -el-color-text-regular;
 }
@@ -460,7 +465,8 @@ VBox {
 
 .progress-indicator>.determinate-indicator>.tick {
     -fx-shape: -el-icon-check;
-    -fx-background-insets: 0;
+    -fx-background-insets: 2px;
+    -fx-padding: 24px;
 }
 
 .progress-indicator>.determinate-indicator>.progress {
@@ -483,11 +489,11 @@ VBox {
     -fx-background-color: -el-color-background-base;
     -fx-text-fill: -el-color-primary;
     -fx-border-color: -el-color-border-base;
-    -fx-border-width: 1;
+    -fx-border-width: 1px;
     -fx-border-style: solid;
-    -fx-border-radius: 4;
-    -fx-background-radius: 4;
-    -fx-padding: 8 15;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 15px;
     -fx-cursor: hand;
 
 }
@@ -516,8 +522,8 @@ VBox {
 .combo-box {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
-    -fx-border-radius: 4;
-    -fx-border-width: 1;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-text-fill: -el-color-text-regular;
 }
