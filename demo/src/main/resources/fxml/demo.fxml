@@ -54,21 +54,21 @@
                            <tooltip>
                               <Tooltip autoHide="true" text="Empty Tooltip" />
                            </tooltip></Label>
-                        <Label disable="true" layoutX="155.0" layoutY="16.0" text="Disabled" />
+                        <Label disable="true" layoutX="122.0" layoutY="16.0" text="Disabled" />
                         <Hyperlink layoutX="40.0" layoutY="70.0" text="Hyperlink" />
-                        <Hyperlink disable="true" layoutX="155.0" layoutY="70.0" text="Disabled" />
+                        <Hyperlink disable="true" layoutX="122.0" layoutY="70.0" text="Disabled" />
                         <Label layoutX="264.0" layoutY="16.0" lineSpacing="4.0" text="Label">
                            <cursor>
                               <Cursor fx:constant="DEFAULT" />
                            </cursor>
                         </Label>
                         <ProgressIndicator layoutX="40.0" layoutY="117.0" progress="0.0" />
-                        <ProgressIndicator layoutX="155.0" layoutY="115.0" progress="0.33" />
-                        <ProgressIndicator layoutX="446.0" layoutY="107.0" />
-                        <ProgressIndicator disable="true" layoutX="222.0" layoutY="117.0" progress="0.33" />
-                        <ProgressIndicator disable="true" layoutX="524.0" layoutY="107.0" />
+                        <ProgressIndicator layoutX="122.0" layoutY="115.0" progress="0.33" />
+                        <ProgressIndicator layoutX="451.0" layoutY="115.0" />
+                        <ProgressIndicator disable="true" layoutX="213.0" layoutY="117.0" progress="0.33" />
+                        <ProgressIndicator disable="true" layoutX="534.0" layoutY="115.0" />
                         <ProgressIndicator layoutX="300.0" layoutY="117.0" progress="1.0" />
-                        <ProgressIndicator disable="true" layoutX="383.0" layoutY="115.0" progress="1.0" />
+                        <ProgressIndicator disable="true" layoutX="383.0" layoutY="117.0" progress="1.0" />
                      </children>
                   </AnchorPane>
                </content>
