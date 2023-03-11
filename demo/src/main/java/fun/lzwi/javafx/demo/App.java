@@ -32,7 +32,8 @@ public class App extends Application {
         scene.getStylesheets().add(ELResources.loadStyle().toExternalForm());
         stage.setScene(scene);
         stage.setTitle("Element-FX Demo");
-        stage.getIcons().add(new Image(Launcher.class.getClassLoader().getResource("img/element-fx-logo-small.png").toExternalForm()));
+        stage.getIcons().add(new Image(
+                Launcher.class.getClassLoader().getResource("img/element-fx-logo-small.png").toExternalForm()));
         stage.show();
     }
 }

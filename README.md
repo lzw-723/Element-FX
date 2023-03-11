@@ -16,6 +16,32 @@ A `JavaFX` version of `element-plus`.
 
 使用**Java 11**开发，兼容**Java 8**及以上版本。
 
+## 起步 Start
+
+> 项目还在开发早期，仅提供演示Demo
+>
+> 需要JDK8或以上版本、git
+
+拉取工程
+
+```shell
+git clone https://github.com/lzw-723/Element-FX
+
+cd Element-FX
+```
+
+安装依赖
+
+```shell
+./mvnw clean install
+```
+
+启动Demo
+
+```shell
+./mvnw clean javafx:run -f "demo/pom.xml"
+```
+
 ## 模块 Module
 
 ### Lite
