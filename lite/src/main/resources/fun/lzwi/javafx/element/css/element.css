@@ -250,6 +250,14 @@ VBox {
     -fx-background-color: -el-color-fill-dark;
 }
 
+/* FIXME: 文字模糊 */
+.text-area .content {
+    -fx-stroke-width: 0px;
+    -fx-stroke: transparent;
+    -fx-background-color: -el-color-background-base;
+}
+
+
 .hyperlink {
     -fx-padding: 0 0 2px 0;
     -fx-text-fill: -el-color-text-regular;
@@ -520,6 +528,7 @@ VBox {
 
 .combo-box {
     -fx-cursor: hand;
+    -fx-background-radius: 4px;
     -fx-background-color: -el-color-background-base;
     -fx-border-radius: 4px;
     -fx-border-width: 1px;
@@ -542,4 +551,66 @@ VBox {
 .combo-box>.arrow-button>.arrow {
     -fx-shape: -el-icon-down;
     -fx-background-color: -el-color-text-regular;
+}
+
+.combo-box-popup>.list-view {
+    -fx-background-color: -el-color-background-base;
+    -fx-border-color: -el-color-border-darker;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0, 6, 8);
+}
+
+
+.menu-button {
+    -fx-cursor: hand;
+    -fx-background-color: -el-color-background-base;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+    -fx-border-color: -el-color-border-base;
+    -fx-text-fill: -el-color-text-regular;
+}
+
+.menu-button:hover {
+    -fx-border-color: -el-color-border-darker;
+}
+
+.menu-button:focused {
+    -fx-border-color: -el-color-primary;
+}
+
+.menu-button:disabled {
+    -fx-background-color: -el-color-fill-dark;
+}
+
+.menu-button>.arrow-button>.arrow {
+    -fx-shape: -el-icon-down;
+    -fx-background-color: -el-color-text-regular;
+}
+
+
+.menu-bar {
+    -fx-padding: 0.5em;
+    -fx-background-color: -el-color-background-base;
+}
+
+.menu-bar>.container>.menu-button {
+    -fx-background-color: -el-color-transparent;
+    -fx-border-color: -el-color-transparent;
+}
+
+.menu-bar>.container>.menu-button:hover>.label,
+.menu-bar>.container>.menu-button:focused>.label,
+.menu-bar>.container>.menu-button:showing>.label {
+    -fx-text-fill: -el-color-primary;
+}
+
+.menu-item:hover,
+.menu-item:focused {
+    -fx-background-color: -el-color-primary-light-4;
+    -fx-text-fill: -fx-text-background-color;
+}
+
+.menu-item:focused>.label {
+    -fx-text-fill: -el-color-primary;
 }
