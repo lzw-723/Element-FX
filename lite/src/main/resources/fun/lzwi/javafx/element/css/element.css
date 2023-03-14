@@ -46,11 +46,11 @@
 
     /* 中性色 */
     /* 文本 */
-    -el-color-text-primary: #b1b3b8;
-    -el-color-text-regular: #606060;
-    -el-color-text-secondary: #dedfe0;
-    -el-color-text-placeholder: #e9e9eb;
-    -el-color-text-disabled: #f4f4f5;
+    -el-color-text-primary: #303133;
+    -el-color-text-regular: #606266;
+    -el-color-text-secondary: #909399;
+    -el-color-text-placeholder: #A8ABB2;
+    -el-color-text-disabled: #C0C4CC;
     /* 边框 */
     -el-color-border-darker: #cdd0d6;
     -el-color-border-dark: #d4d7de;
@@ -408,7 +408,7 @@ VBox {
 }
 
 .slider>.track {
-    -fx-background-color: -el-color-text-secondary;
+    -fx-background-color: -el-color-border-darker;
     -fx-background-radius: 3px;
 }
 
@@ -452,7 +452,7 @@ VBox {
 }
 
 .progress-bar>.track {
-    -fx-background-color: -el-color-fill-darker;
+    -fx-background-color: -el-color-border-dark;
 }
 
 .progress-bar>.bar {
@@ -551,6 +551,22 @@ VBox {
 .combo-box>.arrow-button>.arrow {
     -fx-shape: -el-icon-down;
     -fx-background-color: -el-color-text-regular;
+}
+
+.combo-box>.arrow-button:hover>.arrow {
+    -fx-shape: -el-icon-down;
+    -fx-background-color: -el-color-primary;
+}
+
+.combo-box:editable>.arrow-button {
+    -fx-background-color: -el-color-transparent;
+}
+
+.combo-box:editable>.text-field {
+    -fx-background-color: -el-color-transparent;
+    -fx-border-color: -el-color-transparent;
+    /* 控制高度与不可编辑状态下相同 */
+    -fx-padding: 0.25em;
 }
 
 .combo-box-popup>.list-view {

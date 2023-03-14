@@ -98,8 +98,9 @@
                         <CheckBox allowIndeterminate="true" indeterminate="true" layoutX="23.0" layoutY="132.0" mnemonicParsing="false" text="Indeterminate" />
                         <RadioButton disable="true" layoutX="395.0" layoutY="255.0" mnemonicParsing="false" selected="true" text="Selected&amp;Disabled" />
                         <RadioButton layoutX="278.0" layoutY="255.0" mnemonicParsing="false" selected="true" text="Selected" />
-                        <ComboBox layoutX="276.0" layoutY="24.0" prefWidth="150.0" />
-                        <ComboBox layoutX="436.0" layoutY="24.0" prefWidth="150.0" />
+                        <ComboBox editable="true" layoutX="276.0" layoutY="129.0" prefWidth="150.0" />
+                        <ComboBox disable="true" layoutX="436.0" layoutY="130.0" prefWidth="150.0" />
+                        <ComboBox layoutX="276.0" layoutY="22.0" prefWidth="150.0" />
                      </children></AnchorPane>
             </content>
           </Tab>
