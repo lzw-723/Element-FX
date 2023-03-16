@@ -574,7 +574,7 @@ VBox {
     -fx-border-color: -el-color-border-darker;
     -fx-border-radius: 3px;
     -fx-background-radius: 3px;
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0, 6, 8);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0, 4, 8);
 }
 
 
@@ -582,8 +582,7 @@ VBox {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
     -fx-border-radius: 4px;
-    -fx-border-width: 1px;
-    -fx-border-color: -el-color-border-base;
+    -fx-border-width: 0;
     -fx-text-fill: -el-color-text-regular;
 }
 
@@ -604,9 +603,12 @@ VBox {
     -fx-background-color: -el-color-text-regular;
 }
 
-
 .menu-bar {
     -fx-padding: 0.5em;
+    -fx-background-color: -el-color-background-base;
+}
+
+.menu-bar>.container {
     -fx-background-color: -el-color-background-base;
 }
 
@@ -621,12 +623,50 @@ VBox {
     -fx-text-fill: -el-color-primary;
 }
 
+/* .menu-item上级为.context-menu */
+.menu>.label {
+    /* -fx-font-size: 1.0833em; */
+}
+
 .menu-item:hover,
 .menu-item:focused {
+    -fx-cursor: hand;
     -fx-background-color: -el-color-primary-light-4;
     -fx-text-fill: -fx-text-background-color;
 }
 
 .menu-item:focused>.label {
     -fx-text-fill: -el-color-primary;
+}
+
+.check-menu-item:checked>.left-container>.check,
+.radio-menu-item:checked>.left-container>.radio {
+    -fx-background-color: -el-color-primary;
+    -fx-shape: -el-icon-check;
+    -fx-background-insets: 7px 12px 7px 12px;
+    -fx-padding: 0.25em;
+}
+
+.check-menu-item:focused:checked>.left-container>.check,
+.radio-menu-item:focused:checked>.left-container>.radio {
+    -fx-background-color: -el-color-primary;
+}
+
+.context-menu {
+    -fx-padding: 0;
+    -fx-background-color: -el-color-background-base;
+    -fx-border-color: -el-color-border-darker;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0, 4, 8);
+}
+
+.context-menu:hover {
+    -fx-border-color: -el-color-primary-light-2;
+}
+
+.context-menu .separator:horizontal .line {
+    -fx-border-color: -el-color-border-dark transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-insets: 0;
 }
