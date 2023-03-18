@@ -670,3 +670,39 @@ VBox {
     -fx-border-width: 1 0 0 0;
     -fx-border-insets: 0;
 }
+
+
+.tab-pane>.tab-header-area>.tab-header-background {
+    -fx-background-color: -el-color-basic-white;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: -el-color-border-dark;
+}
+
+.tab-pane>.tab-header-area>.headers-region {
+    -fx-background-color: -el-color-basic-white;
+}
+
+.tab-pane>.tab-header-area>.headers-region>.tab {
+    -fx-background-color: null;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: -el-color-border-dark;
+}
+
+.tab-pane>.tab-header-area>.headers-region>.tab:selected {
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: -el-color-border-dark;
+}
+
+.tab-pane>.tab-header-area>.headers-region>.tab:hover>.tab-container>.tab-label {
+    -fx-text-fill: -el-color-primary;
+}
+
+.tab-pane>.tab-header-area>.headers-region>.tab:selected>.tab-container>.tab-label {
+    -fx-text-fill: -el-color-primary;
+}
+
+.tab-pane>.tab-header-area>.headers-region>.tab:selected>.tab-container>.focus-indicator {
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-insets: 0 -4px -6px -4px;
+    -fx-border-color: -el-color-primary;
+}

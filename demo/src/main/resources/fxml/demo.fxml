@@ -39,15 +39,15 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <RadioMenuItem mnemonicParsing="false" text="Unspecified Action" />
+                  <RadioMenuItem mnemonicParsing="false" text="RadioMenuItem" />
                   <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
                     <content>
-                      <CheckBox text="Click Me" />
+                      <CheckBox text="CustomMenuItem" />
                     </content>
                   </CustomMenuItem>
                   <SeparatorMenuItem mnemonicParsing="false" />
+                  <CheckMenuItem mnemonicParsing="false" text="CheckMenuItem" />
               <MenuItem mnemonicParsing="false" text="Close" />
-                  <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
