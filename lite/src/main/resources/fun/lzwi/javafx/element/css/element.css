@@ -732,3 +732,20 @@ VBox {
     -fx-border-width: 0 0 1px 0;
     -fx-border-color: -el-color-border-base;
 }
+
+
+.split-pane>.split-pane-divider {
+    /* 实际宽度为6px */
+    -fx-padding: 0 3px 0 3px;
+    -fx-background-color: -el-color-border-base;
+}
+
+.split-pane:horizontal>.split-pane-divider {
+    /* 显示宽度为1px */
+    -fx-background-insets: 0 2 0 3;
+}
+
+.split-pane:vertical>.split-pane-divider {
+    /* 显示宽度为1px */
+    -fx-background-insets: 2 0 3 0;
+}
