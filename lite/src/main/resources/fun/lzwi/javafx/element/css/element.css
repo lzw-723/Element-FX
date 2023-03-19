@@ -706,3 +706,27 @@ VBox {
     -fx-border-insets: 0 -4px -6px -4px;
     -fx-border-color: -el-color-primary;
 }
+
+
+.titled-pane>.title {
+    -fx-background-color: null;
+    -fx-border-width: 1px 0 0 0;
+    -fx-border-color: -el-color-border-base;
+}
+
+.titled-pane:collapsed>.title {
+    -fx-border-width: 1px 0 1px 0;
+}
+
+.titled-pane>.title>.arrow-button>.arrow {
+    -fx-shape: -el-icon-down;
+    -fx-background-color: -el-color-text-regular;
+    -fx-background-insets: 0;
+    -fx-effect: null;
+}
+
+.titled-pane>.content {
+    -fx-background-color: null;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: -el-color-border-base;
+}
