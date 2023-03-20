@@ -96,6 +96,7 @@
     /* 来自https://iconpark.oceanengine.com/official */
     -el-icon-up: "m 23.585937,16.585937 -11.999999,12 a 2,2 0 0 0 0,2.828125 2,2 0 0 0 2.828125,0 L 25,20.828125 35.585937,31.414062 a 2,2 0 0 0 2.828125,0 2,2 0 0 0 0,-2.828125 l -12,-12 a 2.0002,2.0002 0 0 0 -2.828125,0 z";
     -el-icon-down: "m 12,16 a 2,2 0 0 0 -1.414062,0.585937 2,2 0 0 0 0,2.828125 l 11.999999,12 a 2.0002,2.0002 0 0 0 2.828125,0 l 12,-12 a 2,2 0 0 0 0,-2.828125 2,2 0 0 0 -2.828125,0 L 24,27.171875 13.414063,16.585937 A 2,2 0 0 0 12,16 Z";
+    -el-icon-left: "m 29.585937,10.585938 -12,11.999999 a 2.0002,2.0002 0 0 0 0,2.828125 l 12,12 a 2,2 0 0 0 2.828125,0 2,2 0 0 0 0,-2.828125 L 21.828125,24 32.414062,13.414063 a 2,2 0 0 0 0,-2.828125 2,2 0 0 0 -2.828125,0 z";
     -el-icon-right: "m 19,10 a 2,2 0 0 0 -1.414063,0.585938 2,2 0 0 0 0,2.828125 L 28.171875,24 17.585937,34.585937 a 2,2 0 0 0 0,2.828125 2,2 0 0 0 2.828125,0 l 12,-12 a 2.0002,2.0002 0 0 0 0,-2.828125 l -12,-11.999999 A 2,2 0 0 0 19,10 Z";
     -el-icon-minus: "m 10.5,22 a 2,2 0 0 0 -2,2 2,2 0 0 0 2,2 h 28 a 2,2 0 0 0 2,-2 2,2 0 0 0 -2,-2 z";
     -el-icon-check: "M 43.003906,9 A 2,2 0 0 0 41.589844,9.5820313 L 16.875,34.177734 6.4101562,23.763672 a 2,2 0 0 0 -2.8281249,0.0078 2,2 0 0 0 0.00781,2.828125 l 11.8750002,11.81836 a 2.0002,2.0002 0 0 0 2.820312,0 l 26.125,-26 A 2,2 0 0 0 44.417969,9.5898438 2,2 0 0 0 43.003906,9 Z";
@@ -753,10 +754,46 @@ VBox {
 
 .split-pane:horizontal>.split-pane-divider {
     /* 显示宽度为1px */
-    -fx-background-insets: 0 2 0 3;
+    -fx-background-insets: 0 2px 0 3px;
 }
 
 .split-pane:vertical>.split-pane-divider {
     /* 显示宽度为1px */
-    -fx-background-insets: 2 0 3 0;
+    -fx-background-insets: 2px 0 3px 0;
+}
+
+
+.pagination>.pagination-control>.control-box>.left-arrow-button,
+.pagination>.pagination-control>.control-box>.right-arrow-button {
+    -fx-border-width: 0;
+    -fx-background-color: null;
+    -fx-scale-shape: true;
+}
+
+.pagination>.pagination-control>.control-box>.left-arrow-button>.left-arrow {
+    -fx-shape: -el-icon-left;
+}
+
+.pagination>.pagination-control>.control-box>.right-arrow-button>.right-arrow {
+    -fx-shape: -el-icon-right;
+}
+
+.pagination>.pagination-control>.control-box>.left-arrow-button:hover>.left-arrow,
+.pagination>.pagination-control>.control-box>.right-arrow-button:hover>.right-arrow {
+    -fx-background-color: -el-color-primary;
+    -fx-background-insets: 0;
+}
+
+.pagination>.pagination-control>.control-box>.number-button {
+    -fx-font-size: 1.1666em;
+    -fx-background-color: null;
+    -fx-text-fill: -el-color-text-regular;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.pagination>.pagination-control>.control-box>.number-button:hover,
+.pagination>.pagination-control>.control-box>.number-button:selected {
+    -fx-background-insets: 0;
+    -fx-text-fill: -el-color-primary;
 }
