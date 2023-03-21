@@ -6,9 +6,7 @@ A `JavaFX` version of `element-plus`.
 
 ## 截图 Screenshot
 
-![按钮](https://img1.imgtp.com/2023/03/08/5Eiq2NWN.png)
-
-![进度条](https://img1.imgtp.com/2023/03/08/hoWx3dvc.png)
+![预览](https://img1.imgtp.com/2023/03/21/XiFkZi7i.gif)
 
 ## 目标 Target
 
