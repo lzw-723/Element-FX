@@ -2,7 +2,6 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.CheckMenuItem?>
 <?import javafx.scene.control.ColorPicker?>
@@ -38,6 +37,7 @@
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.HTMLEditor?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -227,7 +227,7 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ToolBar layoutX="38.0" layoutY="24.0" prefHeight="40.0" prefWidth="200.0">
+                        <ToolBar layoutX="38.0" layoutY="24.0" prefHeight="45.0" prefWidth="260.0">
                           <items>
                             <Button mnemonicParsing="false" text="ToolBar" />
                               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
@@ -235,14 +235,15 @@
                               <Button layoutX="97.0" layoutY="20.0" mnemonicParsing="false" text="Button" />
                           </items>
                         </ToolBar>
-                        <ButtonBar layoutX="38.0" layoutY="109.0" prefHeight="40.0" prefWidth="200.0">
-                          <buttons>
-                            <Button mnemonicParsing="false" text="Button" />
-                              <Button layoutX="135.0" layoutY="13.0" mnemonicParsing="false" text="Button" />
-                              <Button layoutX="135.0" layoutY="13.0" mnemonicParsing="false" text="Button" />
-                              <Button layoutX="201.0" layoutY="13.0" mnemonicParsing="false" text="Button" />
-                          </buttons>
-                        </ButtonBar>
+                        <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="86.0" prefHeight="200.0" prefWidth="439.0" />
+                        <ToolBar layoutX="477.0" layoutY="27.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="99.0">
+                           <items>
+                              <Button mnemonicParsing="false" text="ToolBar" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
+                              <Button layoutX="87.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
+                              <Button layoutX="97.0" layoutY="20.0" mnemonicParsing="false" text="Button" />
+                           </items>
+                        </ToolBar>
                      </children>
                   </AnchorPane>
                </content>
