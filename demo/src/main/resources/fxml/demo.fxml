@@ -217,8 +217,8 @@
                             <MenuItem mnemonicParsing="false" text="Action 2" />
                           </items>
                         </MenuButton>
-                        <DatePicker layoutX="36.0" layoutY="122.0" promptText="DatePicker" />
-                        <ColorPicker layoutX="36.0" layoutY="211.0" />
+                        <DatePicker layoutX="36.0" layoutY="122.0" promptText="DatePicker" showWeekNumbers="true" />
+                        <ColorPicker editable="true" layoutX="36.0" layoutY="211.0" />
                      </children>
                   </AnchorPane>
                </content>
