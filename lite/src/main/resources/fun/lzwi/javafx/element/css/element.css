@@ -1009,6 +1009,10 @@
     -fx-font-size: 1.0833em;
 }
 
+.color-picker:editable>.arrow-button {
+    -fx-background-color: -el-color-transparent;
+}
+
 .color-picker>.arrow-button>.arrow {
     -fx-shape: -el-icon-down;
     -fx-background-color: -el-color-text-regular;
