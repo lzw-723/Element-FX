@@ -120,8 +120,9 @@
     -fx-border-color: -el-color-border-base;
     -fx-border-style: solid;
     -fx-border-radius: 4px;
-    -fx-background-radius: 4px;
     /* -fx-background-radius必须，否则会露出尖锐的背景 */
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
     -fx-padding: 6px 12px;
     -fx-cursor: hand;
     -fx-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
@@ -230,6 +231,7 @@
 
 .text-input {
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-border-radius: 2px;
     -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
@@ -351,6 +353,7 @@
 .choice-box {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-border-radius: 4px;
     -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
@@ -419,6 +422,7 @@
 
 .radio-button>.radio {
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
     -fx-border-radius: 10px;
@@ -495,6 +499,7 @@
 
 .toggle-button {
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-text-fill: -el-color-primary;
     -fx-border-color: -el-color-border-base;
     -fx-border-width: 1px;
@@ -531,6 +536,7 @@
     -fx-cursor: hand;
     -fx-background-radius: 4px;
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-border-radius: 4px;
     -fx-border-width: 1px;
     -fx-border-color: -el-color-border-base;
@@ -582,6 +588,7 @@
 .menu-button {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
+    -fx-background-insets: 0;
     -fx-border-radius: 4px;
     -fx-border-width: 0;
     -fx-text-fill: -el-color-text-regular;
