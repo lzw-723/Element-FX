@@ -295,11 +295,11 @@
     -fx-background-color: -el-color-transparent;
 }
 
+
 .spinner {
     -fx-background-color: -el-color-transparent;
 }
 
-/* 整理代码 */
 .spinner:focused,
 .spinner:contains-focus {
     -fx-background-color: -el-color-transparent;
@@ -391,7 +391,6 @@
 }
 
 .slider>.thumb {
-    /* 20 */
     -fx-pref-width: 20px;
     -fx-pref-height: 20px;
     -fx-cursor: move;
@@ -403,7 +402,6 @@
 
 .slider:focused>.thumb,
 .slider:hover>.thumb {
-    /* 24 */
     -fx-pref-width: 24px;
     -fx-pref-height: 24px;
     -fx-border-radius: 12px;
@@ -629,11 +627,6 @@
 .menu-bar>.container>.menu-button:focused>.label,
 .menu-bar>.container>.menu-button:showing>.label {
     -fx-text-fill: -el-color-primary;
-}
-
-/* .menu-item上级为.context-menu */
-.menu>.label {
-    /* -fx-font-size: 1.0833em; */
 }
 
 .menu-item:hover,
