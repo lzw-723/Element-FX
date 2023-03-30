@@ -74,8 +74,13 @@
     -el-color-background-base: white;
     -el-color-background-overlay: white;
 
+    -el-color-disabled-bg: -el-color-fill-light;
+    -el-color-disabled-text: -el-color-text-placeholder;
+    -el-color-disabled-border: -el-color-border-light;
+
     /* 字体 */
     -el-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+
     /* 字体大小 */
     -el-font-size-extra-small: 1em;
     -el-font-size-small: 1.0833em;
@@ -83,14 +88,30 @@
     -el-font-size-medium: 1.3333em;
     -el-font-size-large: 1.5em;
     -el-font-size-extra-large: 1.6666em;
+
     /* TODO: 行高 */
+    -el-font-line-height-primary: 24px;
+
+    -el-component-size-large: 40px;
+    -el-component-size: 32px;
+    -el-component-size-small: 24px;
+
     /* 间距 */
     -el-space-small: 8px;
     /* small 才是真正的默认间距 */
     -el-space-default: 12px;
     -el-space-large: 16px;
 
+    /* 圆角 */
     -el-border-radius-small: 2px;
+    -el-border-radius-base: 4px;
+    -el-border-radius-round: 20px;
+    -el-border-radius-circle: 100%;
+
+    -el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16);
+    -el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .04), 0px 8px 20px rgba(0, 0, 0, .08);
+    -el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .12);
+    -el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .12);
 
     /* svg path 图标 */
     /* 来自https://iconpark.oceanengine.com/official */
@@ -475,6 +496,7 @@
 
 .progress-indicator>.determinate-indicator>.tick {
     -fx-shape: -el-icon-check;
+    /* TODO: 图标比例 */
     -fx-background-insets: 2px;
     -fx-padding: 24px;
 }
