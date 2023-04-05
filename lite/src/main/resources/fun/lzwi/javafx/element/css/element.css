@@ -108,10 +108,10 @@
     -el-border-radius-round: 20px;
     -el-border-radius-circle: 100%;
 
-    -el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16);
-    -el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .04), 0px 8px 20px rgba(0, 0, 0, .08);
-    -el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .12);
-    -el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .12);
+    -el-box-shadow-dark: rgba(0, 0, 0, 0.08) 0 16px 48px 16px, rgba(0, 0, 0, 0.12) 0 12px 32px, rgba(0, 0, 0, 0.16) 0 8px 16px -8px;
+    -el-box-shadow: rgba(0, 0, 0, 0.04) 0 12px 32px 4px, rgba(0, 0, 0, 0.08) 0 8px 20px;
+    -el-box-shadow-light: rgba(0, 0, 0, 0.12) 0 0 12px;
+    -el-box-shadow-lighter: rgba(0, 0, 0, 0.12) 0 0 6px;
 
     /* svg path 图标 */
     /* 来自https://iconpark.oceanengine.com/official */
@@ -608,7 +608,8 @@
 }
 
 
-.menu-button {
+.menu-button,
+.split-menu-button {
     -fx-cursor: hand;
     -fx-background-color: -el-color-background-base;
     -fx-background-insets: 0;
@@ -617,21 +618,30 @@
     -fx-text-fill: -el-color-text-regular;
 }
 
-.menu-button:hover {
+.menu-button:hover,
+.split-menu-button:hover {
     -fx-border-color: -el-color-border-darker;
 }
 
-.menu-button:focused {
+.menu-button:focused,
+.split-menu-button:focused {
     -fx-border-color: -el-color-primary;
 }
 
-.menu-button:disabled {
+.menu-button:disabled,
+.split-menu-button:disabled {
     -fx-background-color: -el-color-fill-dark;
 }
 
-.menu-button>.arrow-button>.arrow {
+.menu-button>.arrow-button>.arrow,
+.split-menu-button>.arrow-button>.arrow {
     -fx-shape: -el-icon-down;
     -fx-background-color: -el-color-text-regular;
+}
+
+.split-menu-button>.label,
+.split-menu-button>.arrow-button {
+    -fx-background-color: -el-color-transparent;
 }
 
 .menu-bar {

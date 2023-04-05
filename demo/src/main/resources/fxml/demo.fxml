@@ -25,6 +25,7 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -221,6 +222,12 @@
                         </MenuButton>
                         <DatePicker layoutX="36.0" layoutY="122.0" promptText="DatePicker" showWeekNumbers="true" />
                         <ColorPicker editable="true" layoutX="36.0" layoutY="211.0" />
+                        <SplitMenuButton layoutX="279.0" layoutY="93.0" mnemonicParsing="false" text="SplitMenuButton">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </SplitMenuButton>
                      </children>
                   </AnchorPane>
                </content>
@@ -237,8 +244,8 @@
                               <Button layoutX="97.0" layoutY="20.0" mnemonicParsing="false" text="Button" />
                           </items>
                         </ToolBar>
-                        <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="86.0" prefHeight="200.0" prefWidth="439.0" />
-                        <ToolBar layoutX="477.0" layoutY="27.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="99.0">
+                        <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="116.0" prefHeight="200.0" prefWidth="439.0" />
+                        <ToolBar layoutX="486.0" layoutY="1.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="99.0">
                            <items>
                               <Button mnemonicParsing="false" text="ToolBar" />
                               <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
