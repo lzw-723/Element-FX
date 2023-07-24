@@ -664,6 +664,11 @@
     -fx-text-fill: -el-color-primary;
 }
 
+.menu-item {
+    -fx-font-size: 0.8333em;
+    -fx-padding: 0.5em;
+}
+
 .menu-item:hover,
 .menu-item:focused {
     -fx-cursor: hand;
