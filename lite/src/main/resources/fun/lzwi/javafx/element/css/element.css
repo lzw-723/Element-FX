@@ -647,6 +647,9 @@
 .menu-bar {
     -fx-padding: 0.5em;
     -fx-background-color: -el-color-background-base;
+    -fx-border-color: -el-color-border-dark;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-insets: 0;
 }
 
 .menu-bar>.container {
