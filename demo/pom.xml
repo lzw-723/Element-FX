@@ -4,20 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fun.lzwi.javafx</groupId>
     <artifactId>element-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0-dev</version>
     <!-- <packaging>jar</packaging> -->
 
     <parent>
         <groupId>fun.lzwi.javafx</groupId>
         <artifactId>element-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1.0-dev</version>
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>fun.lzwi.javafx</groupId>
             <artifactId>element-lite</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.1.0-dev</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
