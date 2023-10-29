@@ -5,20 +5,21 @@ name: Website CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20.x
-        cache: 'pnpm'
-    - run: npm install -g pnpm
-    - run: pnpm install
-    - run: pnpm run docs:build
+      - uses: actions/checkout@v3
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+          cache: "pnpm"
+      - run: npm install -g pnpm
+      - run: pnpm install
+        working-directory: ./website
+      - run: pnpm run docs:build
+        working-directory: ./website
