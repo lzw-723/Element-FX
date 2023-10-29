@@ -6,6 +6,8 @@ name: Website CI
 on:
   push:
     branches: ["master"]
+permissions:
+  contents: write
 
 jobs:
   build:
