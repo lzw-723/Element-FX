@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Element-FX",
   description: "element-plus for JavaFX",
-  base: './',
+  base: '/Element-FX',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
