@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Install pnpm
+      - name: Install pnpm 8
         uses: pnpm/action-setup@v2
         with:
           version: 8
@@ -22,8 +22,14 @@ jobs:
         with:
           node-version: 20.x
           cache: "pnpm"
-          cache-dependency-path: './website'
-      - run: pnpm install
+          cache-dependency-path: "./website"
+      - name: Build VitePress
+        run: |
+          pnpm install
+          pnpm run docs:build
         working-directory: ./website
-      - run: pnpm run docs:build
-        working-directory: ./website
+      - name: Deploy Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./website/.vitepress/dist
