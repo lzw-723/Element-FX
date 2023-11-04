@@ -127,7 +127,7 @@
 
 
     /* 全局背景色 */
-    /* -fx-background-color: -el-color-background-base; */
+    -fx-background-color: -el-color-background-base;
 }
 
 .label {
@@ -843,6 +843,12 @@
     -fx-text-fill: -el-color-primary;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * Separator                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
 .separator:horizontal .line {
     -fx-border-color: -el-color-border-dark transparent transparent transparent;
     -fx-border-width: 1px 0 0 0;
@@ -855,6 +861,11 @@
     -fx-border-insets: 0;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * ToolBar                                                                     *
+ *                                                                             *
+ ******************************************************************************/
 
 .tool-bar {
     -fx-background-color: -el-color-fill-base;
@@ -872,6 +883,11 @@
     -fx-background-color: -el-color-primary;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * DatePicker                                                                  *
+ *                                                                             *
+ ******************************************************************************/
 
 .date-picker {
     -fx-cursor: hand;
@@ -1028,6 +1044,11 @@
     -fx-background-radius: 3em;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * ColorPicker                                                                 *
+ *                                                                             *
+ ******************************************************************************/
 
 .color-picker {
     -fx-cursor: hand;
@@ -1135,9 +1156,48 @@
     -fx-background-radius: 0;
 }
 
+/*******************************************************************************
+ *                                                                             *
+ * Tooltip                                                                     *
+ *                                                                             *
+ ******************************************************************************/
 
 .tooltip {
     -fx-background-color: rgba(30, 30, 30, 1);
     -fx-background-radius: 3px;
     -fx-effect: null;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * ListView and ListCell                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.list-view {
+    -fx-padding: 4px;
+    -fx-background-color: -el-color-transparent;
+    -fx-border-width: 0px;
+}
+
+.list-cell {
+    -fx-padding: 0.666667em 1em 0.666667em 1em;
+    /* 8 12 8 12 */
+    -fx-background-color: -el-color-basic-white;
+    -fx-text-fill: -el-color-text-regular;
+    /* FIXME: 部分格子的底部描边粗 */
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: -el-color-border-lighter;
+}
+
+.list-cell:odd {
+    -fx-background-color: -el-color-fill-lighter;
+}
+
+.list-cell:hover {
+    -fx-background-color: -el-color-fill-light;
+}
+
+.list-cell:focused {
+    -fx-background-color: -el-color-primary-light-5;
 }
