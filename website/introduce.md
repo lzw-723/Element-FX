@@ -1,6 +1,6 @@
 # Element-FX
 
-[![LICENSE](https://img.shields.io/badge/License-MIT-lightskyblue)](./LICENSE)
+![LICENSE](https://img.shields.io/badge/License-MIT-lightskyblue)
 
 ![JDK](https://img.shields.io/badge/JDK-%3E=8-blue)
 ![JavaFX](https://img.shields.io/badge/JavaFX-Any-pink)
@@ -18,7 +18,7 @@ A `JavaFX` version of `element-plus`.
 
 ## 使用 Using
 
-您可以快速添加Element-FX到现有的JavaFX项目中，参见[文档](https://blog.lzwi.fun/Element-FX/)
+您可以快速添加Element-FX到现有的JavaFX项目中，参见[文档](./setup)
 
 ## 目标 Target
 
