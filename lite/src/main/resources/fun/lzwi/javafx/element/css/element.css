@@ -1190,14 +1190,14 @@
     -fx-border-color: -el-color-border-lighter;
 }
 
-.list-cell:odd {
+.list-cell:filled:odd {
     -fx-background-color: -el-color-fill-lighter;
 }
 
-.list-cell:hover {
+.list-cell:filled:hover {
     -fx-background-color: -el-color-fill-light;
 }
 
-.list-cell:focused {
+.list-cell:filled:focused {
     -fx-background-color: -el-color-primary-light-5;
 }
