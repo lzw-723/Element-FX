@@ -14,6 +14,10 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: '介绍',
+        link: '/introduce'
+      },
+      {
         text: '安装',
         link: '/setup'
       },
