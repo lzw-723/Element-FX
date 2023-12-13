@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t,R as s}from"./chunks/framework.fjXZyucl.js";const k=JSON.parse('{"title":"Element-FX","description":"","frontmatter":{},"headers":[],"relativePath":"introduce.md","filePath":"introduce.md"}'),i={name:"introduce.md"},l=s("",33),n=[l];function h(o,r,p,d,c,m){return e(),t("div",null,n)}const u=a(i,[["render",h]]);export{k as __pageData,u as default};

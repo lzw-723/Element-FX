@@ -1,0 +1,1 @@
+import{_ as s,o as i,c as a,R as n}from"./chunks/framework.fjXZyucl.js";const c=JSON.parse('{"title":"快速使用","description":"","frontmatter":{},"headers":[],"relativePath":"setup.md","filePath":"setup.md"}'),t={name:"setup.md"},l=n("",23),e=[l];function h(p,k,E,r,d,g){return i(),a("div",null,e)}const y=s(t,[["render",h]]);export{c as __pageData,y as default};
