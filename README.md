@@ -1,12 +1,24 @@
 # Element-FX
 
+[![LICENSE](https://img.shields.io/badge/License-MIT-lightskyblue)](./LICENSE)
+
+![JDK](https://img.shields.io/badge/JDK-%3E=8-blue)
+![JavaFX](https://img.shields.io/badge/JavaFX-Any-pink)
+
+[![JitCI](https://jitci.com/gh/lzw-723/Element-FX/svg)](https://jitci.com/gh/lzw-723/Element-FX)
+[![JitPack](https://jitpack.io/v/lzw-723/Element-FX.svg)](https://jitpack.io/#lzw-723/Element-FX)
+
 A `JavaFX` version of `element-plus`.
 
 `JavaFX` 版本的 `element-plus`。
 
 ## 截图 Screenshot
 
-![预览](https://img1.imgtp.com/2023/03/21/XiFkZi7i.gif)
+![预览](https://i.niupic.com/images/2023/12/13/dDBf.png)
+
+## 使用 Using
+
+您可以快速添加Element-FX到现有的JavaFX项目中，参见[文档](https://blog.lzwi.fun/Element-FX/)
 
 ## 目标 Target
 
@@ -16,9 +28,7 @@ A `JavaFX` version of `element-plus`.
 
 ## 起步 Start
 
-> 项目还在开发早期，仅提供演示Demo
->
-> 需要JDK8或以上版本、git
+> 开发、构建本项目需要 JDK 8 或以上版本、git
 
 拉取工程
 
@@ -56,3 +66,13 @@ cd Element-FX
 * [ ] 样式表黑暗模式支持
 * [ ] 样式表动态切换支持
 * [ ] 自定义控件支持
+
+## 贡献与社区支持
+
+我们欢迎任何形式的贡献和支持！
+
+如果您发现任何错误、问题或需要改进的地方，请随时提交问题或拉取请求（Pull Request）。
+
+我们将尽快审查和处理您的贡献，并与您进行进一步的讨论和合作。
+
+同时，我们也鼓励您参与社区讨论和分享您的经验、想法和建议，以促进项目的发展和进步。
