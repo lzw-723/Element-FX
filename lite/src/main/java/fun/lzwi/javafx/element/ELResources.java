@@ -3,9 +3,9 @@ package fun.lzwi.javafx.element;
 import java.net.URL;
 
 public class ELResources {
-    
+
     public static String version() {
-        return "0.0.1-dev";
+        return ELResources.class.getPackage().getImplementationVersion();
     }
 
     public static URL load(String path) {
